@@ -12,7 +12,7 @@ The project  visualizes:
 
 ## Features  
 - **Implied Volatility Calculation**: Compute implied volatility for call and put options using the Newton-Raphson method.  
-- **Real-Time Data Integration**: Fetches financial data (spot price, option price, strike price, maturity) from [yfinance](https://github.com/ranaroussi/yfinance) and U.S. Treasury websites.  
+- **Real-Time Data Integration**: Fetches financial data (spot price, option price, strike price, maturity) from [yfinance](https://github.com/ranaroussi/yfinance) and [U.S. Treasury websites](https://home.treasury.gov).  
 - **Volatility Surface Visualization**: Generates volatility surface graphs using bivariate splines and scatter plots based on user-specified tickers.
 - **Volatility Smile and Term Structure**: Creates detailed graphs for volatility smiles and term structures based on user-specified tickers.
 
@@ -22,19 +22,23 @@ Examples
 
 ### 1\. Volatility Surface Visualization
 
-Run the `volatility_surface.py` module to visualize the volatility surface for a given ticker, such as **AAPL** (Apple Inc.). The module fetches real-time financial data and generates a 3D plot of implied volatility across different strike prices and maturities.
+Run the `volatility_surface.py` module to visualize the volatility surface for a given ticker, such as **MSFT** (Microsoft Corp.). The module fetches real-time financial data and generates a 3D plot of implied volatility across different strike prices and maturities.
 
+![volatility_surface](https://github.com/user-attachments/assets/687370e6-4087-4bb0-ae06-f17c4ba80ed9)
 
+![scatter_volatility_surface](https://github.com/user-attachments/assets/6bfcb222-191f-4736-989e-1ab9f00a3752)
 
 -------------------------------------------------------------------------
 
 ### Example 2: Volatility Smile Visualization  
-Run the `volatility_smile.py` module to visualize the volatility smile for a given ticker, such as **AAPL** (Apple Inc.). This module fetches real-time financial data and generates a plot showing how implied volatility varies with strike prices for a specific maturity.
+Run the `volatility_smile.py` module to visualize the volatility smile for a given ticker, such as **MSFT** (Microsoft Corp.). This module fetches real-time financial data and generates a plot showing how implied volatility varies with strike prices for a specific maturity.
+![volatility_smile](https://github.com/user-attachments/assets/eceff6d7-0742-4ac3-8d50-54e4d5877193)
 
 -------------------------------------------------------------------------
 
 ### Example 3: Term Structure Visualization  
-Run the `Term_Strucutre.py` module to visualize the term structure for a given ticker, such as **AAPL** (Apple Inc.). This module fetches real-time financial data and generates a plot showing how implied volatility varies with strike prices for a specific maturity.
+Run the `Term_Strucutre.py` module to visualize the term structure for a given ticker, such as **MSFT** (Microsoft Corp.). This module fetches real-time financial data and generates a plot showing how implied volatility varies with strike prices for a specific maturity.
+![term_structure](https://github.com/user-attachments/assets/c6393de1-43d2-4a52-a5f6-3f5d1c97ef2d)
 
 
 ## Project Structure  
