@@ -7,12 +7,11 @@ class FinancialData:
         self.ticker = ticker
         self.stock = yf.Ticker(ticker)
 
-    def get_risk_free_rate(self):
+    def get_risk_free_rate(self): # get the 1-year Treasury yield
         url = 'https://home.treasury.gov'
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Find the span with id 'data-1yr' and extract its text
         data_1yr = soup.find('span', id='data-1yr')
         if data_1yr:
             return float(data_1yr.text) / 100.0
